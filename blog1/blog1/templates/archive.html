@@ -5,6 +5,8 @@
     <title>我的博客</title>
 </head>
 <body>
+<h1>{{ now }}</h1>
+<h1>{{ url }}</h1>
 {% for post in posts %}
     <h1>{{ post.title }}</h1>
     <p>{{ post.timetemp }}</p>
