@@ -25,7 +25,7 @@ SECRET_KEY = 'i$+t_+^=!#*eh(k+*6gfk+eomv6)-wcw&s65(mi9jp_fo!q!p7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['api.blog.site', '127.0.0.1', 'localhost', 'www.blog.site']
 
 
 # Application definition
