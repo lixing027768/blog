@@ -55,7 +55,11 @@ ROOT_URLCONF = 'blog1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["/home/python/Desktop/blog/blog1/blog1/templates"],
+        # 相对路径
+        # 'DIRS': ["/home/python/Desktop/blog/blog1/blog1/templates"],
+
+        # 绝对路径　windows > '\\'   linux > '/'
+        'DIRS': [os.path.join(os.path.dirname(__file__), 'templates').replace('\\', '/')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
